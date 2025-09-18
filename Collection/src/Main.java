@@ -13,5 +13,18 @@ public class Main {
         list.add(4);
         list.add(5);
         System.out.println(list.size());
+
+        for(int i = 0; i < list.size(); i++){
+            System.out.print(list.get(i) + " ");
+        }
+        list.add(3, 100);
+        System.out.println("");
+
+        for(int i = 0; i < list.size(); i++){
+            System.out.print(list.get(i) + " ");
+        }
+        for(int x : list){
+            System.out.println(x + " ");
         }
     }
+}
