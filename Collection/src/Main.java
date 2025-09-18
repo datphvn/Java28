@@ -4,6 +4,12 @@ import java.util.Scanner;
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
+
+    public static void thayDoi(ArrayList<Integer> list) {
+        for(int i = 0; i < list.size(); i++){
+            list.set(i, 28);
+        }
+    }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         ArrayList<Integer> list = new ArrayList<>();
@@ -21,6 +27,7 @@ public class Main {
         System.out.println(list.indexOf(3));
         System.out.println(list.indexOf(13));
         list.remove((Object)5);
+        thayDoi(list);
         for(int x : list){
             System.out.println(x + " ");
         }
