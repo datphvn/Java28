@@ -3,6 +3,7 @@ package Set;
 import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.Scanner;
+import java.util.TreeSet;
 
 public class demo {
     public static void main(String[] args) {
@@ -29,6 +30,15 @@ public class demo {
         linkedHashSet.add(1);
         linkedHashSet.add(2);
 
+        TreeSet<Integer> treeSet = new TreeSet<>();
+        int n = sc.nextInt();
+        for (int i = 0; i < n; i++) {
+            int x = sc.nextInt();
+            treeSet.add(x);
 
+        }
+        for(int x : treeSet){
+            System.out.print(x + " ");
+        }
     }
 }
