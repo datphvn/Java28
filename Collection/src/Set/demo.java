@@ -1,6 +1,7 @@
 package Set;
 
 import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.Scanner;
 
 public class demo {
@@ -17,5 +18,17 @@ public class demo {
         for(int x : set){
             System.out.print (x + " ");
         }
+        System.out.println(set.contains(1));
+        set.remove(1);
+        System.out.println(set.size());
+        System.out.println("====================================");
+        LinkedHashSet linkedHashSet = new LinkedHashSet();
+        linkedHashSet.add(1);
+        linkedHashSet.add(3);
+        linkedHashSet.add(3);
+        linkedHashSet.add(1);
+        linkedHashSet.add(2);
+
+
     }
 }
