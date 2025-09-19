@@ -8,10 +8,11 @@ public class setmapbai1Phanturiengbiet {
         Scanner sc = new Scanner(System.in);
         HashSet<Integer> set = new HashSet<Integer>();
         int n = sc.nextInt();
-        int a[] = new int[n];
+
         for (int i = 0; i < n; i++) {
-            a[i] = sc.nextInt();
-            set.add(a[i]);
+            int x = sc.nextInt();
+            set.add(x);
+            //khong can tao mang
         }
         System.out.println(set.size());
     }
