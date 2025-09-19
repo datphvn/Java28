@@ -21,6 +21,7 @@ public class demoComparator {
         return sum;
     }
 
+    //Sap xep theo tong chu so tang dan, neu 2 so co cung tong chu so thi so nho hon se dung truoc
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Integer[] a = {10000001, 1, 1000003, 3001, 4000, 6003, 9000, 1008, 20002, 202};
@@ -32,7 +33,10 @@ public class demoComparator {
 
             @Override
             public int compare(Integer o1, Integer o2) {
-                return tong(o2) - tong(o1);
+                if(tong(o1) != tong(o2)) {
+                    return tong(o1) - tong(o2);
+                }
+                return o1 - o2;
             }
         });
         for (int x : a) System.out.print(x + " ");
