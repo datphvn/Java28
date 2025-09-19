@@ -14,6 +14,7 @@ public class setmapbaibasic6 {
             map.put(s, 1);
 
         }
+        System.out.println(map.size());
         for(Map.Entry<String, Integer> entry : map.entrySet()){
             System.out.print(entry.getKey() + " ");
         }
