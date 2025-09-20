@@ -3,20 +3,20 @@ package comparator;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class cmpBai14 {
+public class cmpBai15 {
     //vi tri cuoi cung cua phan tu < X trong mang tang dan
-    public static int lastPosition(int a[], int l, int r, int x){
+    public static int firstPosition(int a[], int l, int r, int x){
         int res = -1;
         while (l <= r){
             int m = (l+r)/2;
-            if (a[m] < x){
+            if (a[m] > x){
                 res = m;
-                l = m + 1;
+                r = m-1;
 
             }
 
             else{
-                r = m-1;
+                l = m+1;
             }
         }
         return res;
@@ -48,8 +48,13 @@ public class cmpBai14 {
         }
         Arrays.sort(b);
         for(int x : a){
-            int pos = lastPosition(a,0,m-1,x);
-            System.out.print(pos + 1 + " ");
+            int pos = firstPosition(a,0,m-1,x);
+            if(pos == -1){
+                System.out.print("0");
+            }
+            else{
+                System.out.print(m - pos + " ");
+            }
         }
 
     }
