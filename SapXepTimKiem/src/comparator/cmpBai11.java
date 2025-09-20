@@ -1,6 +1,8 @@
+package comparator;
+
 import java.util.Scanner;
 
-public class demoBinarySearch {
+public class cmpBai11 {
 
     public static int firstPosition(int a[], int l, int r, int x){
         int res = -1;
@@ -36,8 +38,13 @@ public class demoBinarySearch {
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int[] a = {1, 2, 2, 3, 3, 4, 7 , 9, 10};
-        System.out.println(bianarySearch(a, 0, a.length-1, 3));
+        int n = sc.nextInt();
+        int x = sc.nextInt();
+        int[] a = new int[n];
+        for (int i = 0; i < n; i++) {
+            a[i] = sc.nextInt();
+        }
+        System.out.println(firstPosition(a, 0, n-1, x));
 
     }
 }
