@@ -12,7 +12,7 @@ public class cmpBai5 {
             a[i] = new ArrayList<>(); //cap phat dong cho a[i]
             a[i].add(sc.nextInt());
             a[i].add(sc.nextInt());
-
+            a[i].add(sc.nextInt());
         }
         Arrays.sort(a, new Comparator<ArrayList<Integer>>() {
             @Override
