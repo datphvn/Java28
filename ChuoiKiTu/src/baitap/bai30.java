@@ -6,8 +6,8 @@ public class bai30 {
     //sau hoan vi Permutation
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String s = sc.nextLine();
-        String t = sc.nextLine();
+        String s = sc.next();
+        String t = sc.next();
         int[] cnt = new int[256];
         for(char x : s.toCharArray()) {
             cnt[(int)x]++;
