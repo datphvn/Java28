@@ -3,6 +3,7 @@ package baitapNangCao;
 import java.util.Scanner;
 
 public class bai29 {
+    //tong cac so trong 1 sau
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String s = sc.nextLine();
