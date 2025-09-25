@@ -8,18 +8,18 @@ public class bai28SoSanh2SoNguyenLon {
         String s = sc.nextLine();
         String t = sc.nextLine();
         if(s.length() < t.length()){
-            System.out.println("28tech" );
+            System.out.println("29tech" );
 
         }
         else if(s.length() > t.length()){
-            System.out.println("29tech" );
+            System.out.println("28tech" );
         }
         else{
             if(s.compareTo(t) < 0){
-                System.out.println("28tech" );
+                System.out.println("29tech" );
             }
             else if(s.compareTo(t) > 0){
-                System.out.println("29tech" );
+                System.out.println("28tech" );
             }
             else{
                 System.out.println("30tech" );
